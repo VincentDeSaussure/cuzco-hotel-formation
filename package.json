@@ -1,0 +1,26 @@
+{
+  "name": "kata-node",
+  "version": "1.0.0",
+  "description": "Set up a node test environment",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app/app.js dev 3 06-12 06-13",
+    "start-prod": "node app/app.js prod 3 06-12 06-13",
+    "test": "supervisor -q -n exit -x ./node_modules/.bin/mocha -- -b"
+  },
+  "keywords": [
+    "kata",
+    "test",
+    "node",
+    "js",
+    "randori"
+  ],
+  "author": "Adrien SAUNIER <contact.adriensaunier@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.0.2",
+    "sinon": "^2.1.0",
+    "supervisor": "^0.11.0"
+  }
+}
